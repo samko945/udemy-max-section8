@@ -7,9 +7,9 @@ export default function UsersList(props) {
 	return (
 		<Card className={classes.users}>
 			<ul>
-				{props.users.map((user) => {
+				{props.users.map((user, index) => {
 					return (
-						<li>
+						<li key={index}>
 							{user.name} ({user.age} years old)
 						</li>
 					);
